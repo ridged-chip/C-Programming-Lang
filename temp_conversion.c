@@ -12,6 +12,10 @@ int main()
 				step = 20;
 
 				f = lowest;
+
+				printf("F => C Conversion Table\n");
+				printf("F\tC\n");
+
 				while (f <= highest) {
 								c = 5 * (f-32) / 9;
 								printf("%d\t%d\n", f, c);
