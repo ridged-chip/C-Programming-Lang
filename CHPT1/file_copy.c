@@ -14,5 +14,7 @@ int main() {
 								putchar(c);
 				}
 
+				printf("%d%", EOF); //prints value of EOF
+
 				return 0;
 }
