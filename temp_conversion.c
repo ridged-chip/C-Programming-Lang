@@ -21,5 +21,17 @@ int main()
 								printf("%d\t%d\n", f, c);
 								f = f + step;
 				}
+
+				printf("\n\n");
+				printf("C => F Conversion Table\n");
+				printf("C\tF\n");
+				
+				c = lowest;
+				while (c <= highest) {
+								f = (9/5)*c + 32;
+								printf("%d\t%d\n", c, f);
+								c = c + step;
+				}
+
  return 0;
 }
