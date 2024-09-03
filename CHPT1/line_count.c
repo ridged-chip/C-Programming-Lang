@@ -7,7 +7,7 @@ int main()
 
 				nl = 0;
 				while ((c = getchar()) != EOF) {
-								if (c == '\n') ++nl;
+								if (c == '\n' || c == '\t' || c == ' ') ++nl;
 				}
 				printf("%d\n", nl);
 				return 0;
