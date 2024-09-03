@@ -1,12 +1,10 @@
 #include <stdio.h>
 
-int main() {
-				long nc;
+int main() 
+{
+				double nc;
 
-				nc = 0;
-				while (getchar() != EOF) {
-								++nc;								//Increment by 1
-								printf("%ld\n",nc);
-				}
-				return 0;		
+				for (nc = 0; getchar() != EOF; ++nc);
+				printf("%.0f\n", nc);
+				return 0;
 }
