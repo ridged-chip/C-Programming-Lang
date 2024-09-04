@@ -11,6 +11,11 @@ int main() {
 				 * c would either be assigned 0 or 1 depending on if EOF was hit. */
 
 				while ((c = getchar()) != EOF) {
+								if (c == ' ') {
+												while ((c = getchar()) == ' ');
+												putchar(' ');
+												if (c == EOF) break;
+								}
 								putchar(c);
 				}
 
